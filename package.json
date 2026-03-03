@@ -1,0 +1,26 @@
+{
+  "name": "recruitment_exercise",
+  "version": "1.0.0",
+  "description": "Test automation framework using CodeceptJS, Playwright, Gherkin, and Allure",
+  "scripts": {
+    "test": "codeceptjs run --features --steps",
+    "test:web": "codeceptjs run --features --grep @web --steps",
+    "test:api": "codeceptjs run --features --grep @api --steps",
+    "test:debug": "codeceptjs run --features --debug",
+    "def": "codeceptjs def",
+    "gherkin:snippets": "codeceptjs gherkin:snippets",
+    "gherkin:steps": "codeceptjs gherkin:steps",
+    "allure:generate": "allure generate ./allure-results -o ./allure-report --clean",
+    "allure:open": "allure open ./allure-report",
+    "allure:report": "npm run allure:generate && npm run allure:open"
+  },
+  "devDependencies": {
+    "@codeceptjs/configure": "^0.10.0",
+    "allure-codeceptjs": "^3.0.0",
+    "allure-commandline": "^2.30.0",
+    "codeceptjs": "^3.5.4",
+    "playwright": "^1.49.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.0"
+  }
+}

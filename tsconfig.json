@@ -1,0 +1,21 @@
+{
+  "ts-node": {
+    "files": true,
+    "transpileOnly": true
+  },
+  "compilerOptions": {
+    "target": "es2018",
+    "lib": ["es2018"],
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "types": ["codeceptjs", "node"],
+    "resolveJsonModule": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "output", "allure-results", "allure-report", "dist"]
+}
