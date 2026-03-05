@@ -71,6 +71,9 @@ codecept.conf.ts    # Framework configuration
 ## Design Notes
 
 Each page of the application has its own Page Object file with selectors and methods. This way, if a selector changes on the website, I only need to update it in one place.
+
 Steps like login and cart navigation are written once and reused across multiple scenarios to avoid duplication.
+
 Web and API tests are separated with `@web` and `@api` tags, so they can be run independently.
+
 For actions that require loops (like adding all items to cart or removing an item by index), I used `I.usePlaywrightTo()` to work with native Playwright. CodeceptJS's `I.click()` doesn't execute immediately — it adds actions to a queue. Inside a loop, the next Gherkin step can start before all the clicks have actually happened. `I.usePlaywrightTo()` solves this by running each click with `await`, so they complete in order before moving on.
