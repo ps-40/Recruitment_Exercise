@@ -4,6 +4,7 @@ Feature: Problem user purchase
     I want to add particular item to the cart
     So I can validate cart functionality despite know issue
 
+# problem_user has intentional UI defects: wrong product opens, add to cart broken
 Scenario: Problem user add item to the cart
     Given I am on the SauceDemo login page
     When I log in as "problem_user" with password "secret_sauce"

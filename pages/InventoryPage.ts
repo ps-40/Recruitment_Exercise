@@ -7,7 +7,7 @@ export = {
     shoppingCart: '[data-test="shopping-cart-link"]',
 
     sortBy(option: string) {
-    I.selectOption(this.sortDropdown, option);
+        I.selectOption(this.sortDropdown, option);
     },
 
     async getAllProductNames(): Promise<string[]> {

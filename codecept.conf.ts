@@ -15,6 +15,10 @@ export const config: CodeceptJS.MainConfig = {
       waitForNavigation: 'load',
       waitForTimeout: 10000,
     },
+    REST: {
+      endpoint: 'https://dummyjson.com'
+    },
+    JSONResponse: {}
   },
 
   include: {
@@ -31,6 +35,7 @@ export const config: CodeceptJS.MainConfig = {
   gherkin: {
     features: [
       './features/web/*.feature',
+      './features/api/*.feature',
     ],
     steps: [
       './step_definitions/web/login.steps.ts',
@@ -38,6 +43,7 @@ export const config: CodeceptJS.MainConfig = {
       './step_definitions/web/cart.steps.ts',
       './step_definitions/web/checkout.steps.ts',
       './step_definitions/web/item_details.steps.ts',
+      './step_definitions/api/products_steps.ts',
     ],
   },
 

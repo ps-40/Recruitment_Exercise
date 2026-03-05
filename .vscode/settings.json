@@ -1,0 +1,11 @@
+{
+    "cucumberautocomplete.steps": [
+        "step_definitions/web/login.steps.ts",
+        "step_definitions/web/inventory.steps.ts",
+        "step_definitions/web/cart.steps.ts",
+        "step_definitions/web/checkout.steps.ts",
+        "step_definitions/web/item_details.steps.ts",
+        "step_definitions/api/products_steps.ts"
+    ],
+    "cucumberautocomplete.strictGherkinCompletion": false
+}
