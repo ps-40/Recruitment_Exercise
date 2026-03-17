@@ -10,6 +10,5 @@
             node-version: 18                                                                                                                                                                                       
         - run: npm ci
         - run: npx playwright install --with-deps chromium
-        - run: npm run test:api                                                                                                                                                                                    
-        - run: npm run test:web
-                                    
+        - run: xvfb-run npm run test:api                                                                                                                                                                             
+        - run: xvfb-run npm run test:web                                
