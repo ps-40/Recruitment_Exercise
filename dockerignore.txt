@@ -1,0 +1,8 @@
+node_modules                                                                                                                                                                                                     
+output                                                                                                                                                                                                         
+allure-results
+allure-report
+execution_screenshots
+.git                                                                                                                                                                                                             
+.vscode
+
